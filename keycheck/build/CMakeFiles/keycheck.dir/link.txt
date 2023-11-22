@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/keycheck.dir/test.cpp.o -o keycheck  /home/log/keygen/keycheck/keycheck.a 

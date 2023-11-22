@@ -1,0 +1,3 @@
+/home/log/keygen/keycheck/build/CMakeFiles/keycheck.dir
+/home/log/keygen/keycheck/build/CMakeFiles/edit_cache.dir
+/home/log/keygen/keycheck/build/CMakeFiles/rebuild_cache.dir
