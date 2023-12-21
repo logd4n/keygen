@@ -9,8 +9,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-#include <QClipboard>
-
 #define NUMBER_CONST 48 //Константа для перевода из INT в CHAR
 
 MainWindow::MainWindow(QWidget *parent)
@@ -22,6 +20,9 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("keygen by LOG");
     setWindowFlags(Qt::MSWindowsFixedSizeDialogHint);
 
+    //QDesktopServices::openUrl(QUrl("https://vk.com/logd4n")); //OPEN VK
+
+    /*
     //QMediaPlayer *m_player = new QMediaPlayer;
     QSoundEffect *soundfx = new QSoundEffect;
 
@@ -42,6 +43,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //qDebug() << "Source: " << m_player->source();
     //qDebug() << "\nPlaying?: " << m_player->isPlaying();
+    */
 }
 
 MainWindow::~MainWindow()
@@ -269,3 +271,9 @@ void MainWindow::on_pushButton_2_clicked()
     ui->statusbar->showMessage("Copy is OK!");
 }
 
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QMessageBox aboutProgram (QMessageBox::Information, "About keygen...", "Version 1.0.1\n<Code by LOG>", QMessageBox::NoButton);
+    aboutProgram.exec();
+}

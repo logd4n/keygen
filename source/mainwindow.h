@@ -12,10 +12,12 @@
 #include <QMainWindow>
 
 #include <QRandomGenerator>
+#include <QClipboard>
+#include <QMessageBox>
 
-#include <QtMultimedia>
-#include <QMediaPlayer>
-#include <QSoundEffect>
+#include <QtMultimedia> //
+#include <QMediaPlayer> // TESTING
+#include <QSoundEffect> //
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -39,6 +41,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_actionAbout_triggered();
 
 private:
     Ui::MainWindow *ui;
